@@ -34,11 +34,9 @@ a {
   max-width: 750px;
 }
 
-.bloc {
-  width: 100%;
-  clear: both;
-  background: 50% 50% no-repeat;
-  background-size: cover;
+.bg-image {
+  width: auto;
+  max-width: 100%;
 }
 
 .bloc-xl {
@@ -123,11 +121,21 @@ a {
 }
 
 .webp .bg-image {
-  background-image: url(/img/bg-image.webp);
+  background:
+      linear-gradient(
+      rgba(120,144,156, 0.4),
+      rgba(120,144,156, 0.4)
+    ),
+  url(/img/bg-image.jpg) center center / cover no-repeat;
 }
 
 .no-webp .bg-image {
-  background-image: url(/img/bg-image.jpg);
+  background:
+      linear-gradient(
+      rgba(120,144,156, 0.4),
+      rgba(120,144,156, 0.4)
+    ),
+  url(/img/bg-image.jpg) center center / cover no-repeat;
 }
 
 .bloc-first {
@@ -135,12 +143,10 @@ a {
 }
 
 .bloc-second {
-  min-height: 200px;
   height: 23vh;
 }
 
 @media (min-width:768px) {
-
   .container {
     width:750px;
   }
@@ -160,14 +166,14 @@ a {
 }
 
 @media (max-width:768px) {
+  body {
+    font-size: 12px;
+  }
 
   .container {
     width: 90%;
   }
 
-  body {
-    font-size: 12px;
-  }
   .col-sm-4, .col-sm-12 {
     padding: 0;
   }
@@ -176,28 +182,9 @@ a {
     font-weight: 400;
     line-height: 1.2;
   }
-
-  .page-container {
-    overflow-x: hidden;
-    position: relative;
-  }
 }
 
 @media (max-width:767px) {
-
-  .page-container {
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  .bloc-first {
-    min-height: 446px;
-  }
-
-  .bloc-second {
-    min-height: 163px;
-  }
-
   .voffset {
     margin-top: 5px;
   }
@@ -206,37 +193,38 @@ a {
     width:33.33333333%;
     float: left;
   }
+}
 
 @media (max-width:676px) {
-
   .bloc {
     padding-left: 0;
     padding-right: 0;
   }
 
   .bloc-xl {
-    /*padding: 40px 0;*/
     padding: 0;
   }
+
   .bloc {
-    text-align: center!important;
+    text-align: center;
   }
+
   .ion {
     width: 52px;
   }
+
   .br {
     display: block;
   }
 }
 
-@media only screen and (max-width : 420px) {
-
+@media only screen and (device-aspect-ratio: 40/71), (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .bloc-first {
-    height: 60%;
+    height: 64vh;
   }
 
   .bloc-second {
-    height: 40%;
+    height: auto;
   }
 
   .bloc-md {
@@ -244,8 +232,24 @@ a {
   }
 
   .col-sm-4 {
-    width: 100%;
-    float: none;
     padding: 10px 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .br {
+    display: inline;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (device-aspect-ratio: 40/71) {
+  body {
+    font-size: 10px;
   }
 }
