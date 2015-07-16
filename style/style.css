@@ -218,7 +218,7 @@ a {
   }
 }
 
-@media only screen and (device-aspect-ratio: 40/71), (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (device-aspect-ratio: 40/71), screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .bloc-first {
     height: 64vh;
   }
@@ -236,19 +236,19 @@ a {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .br {
     display: inline;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     font-size: 9px;
   }
 }
 
-@media only screen and (device-aspect-ratio: 40/71) {
+@media screen and (device-aspect-ratio: 40/71) {
   body {
     font-size: 10px;
   }
