@@ -343,11 +343,12 @@ a {
 }
 
 .webp .bg-image {
-  background: linear-gradient(rgba(120, 144, 156, 0.4), rgba(120, 144, 156, 0.4)), url(/img/bg-image.webp) center center/cover no-repeat;
+  // background: linear-gradient(rgba(120, 144, 156, 0.4), rgba(120, 144, 156, 0.4)), url(/img/bg-image.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(120, 144, 156, 0.4), rgba(120, 144, 156, 0.4)), url(https://dropshare-s3.s3-eu-central-1.amazonaws.com/bg-image-xlx/bg-image.webp) center center/cover no-repeat;
 }
 
 .no-webp .bg-image {
-  background: linear-gradient(rgba(120, 144, 156, 0.4), rgba(120, 144, 156, 0.4)), url(/img/bg-image.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(120, 144, 156, 0.4), rgba(120, 144, 156, 0.4)), url(https://dropshare-s3.s3-eu-central-1.amazonaws.com/bg-image-qxN/bg-image.jpg) center center/cover no-repeat;
 }
 
 .bloc-first {
